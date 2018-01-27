@@ -45,4 +45,4 @@ Cenario: Componente deve ordenar testes alfabeticamente
         * Bancos devem ser brancos
         * Copo deve ser informado anteriormente
         * Um número maior que 10 é inválido
-        """"
+        """
