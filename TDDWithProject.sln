@@ -19,6 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{F82DCC32
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{73FDCD24-BAF5-453D-BB45-7D5853C305D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "spec", "spec", "{0A6E676B-C78B-4D8D-A336-E05AF0C449C4}"
+	ProjectSection(SolutionItems) = preProject
+		doc\spec\ExecutarTestesDeUmAssembly.feature = doc\spec\ExecutarTestesDeUmAssembly.feature
+		doc\spec\ExibirTestesEmUmAssembly.feature = doc\spec\ExibirTestesEmUmAssembly.feature
+		doc\spec\ValidarAssemblyDotNet.feature = doc\spec\ValidarAssemblyDotNet.feature
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +49,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{755650AF-A242-4DEA-A4BD-51EBD7EF0EF0} = {51FEF7FC-4FF0-4386-967E-D5F4E980ECBA}
 		{F21F37EF-D960-4F26-8713-B295AB0B16A1} = {3CC0B61D-A087-4CCF-A3BA-6CEE8B7F1E85}
+		{0A6E676B-C78B-4D8D-A336-E05AF0C449C4} = {73FDCD24-BAF5-453D-BB45-7D5853C305D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192729E6-9B72-4703-A2CA-0C19B012AB2B}
