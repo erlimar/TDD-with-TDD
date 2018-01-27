@@ -1,11 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDWithProject", "TDDWithProject\TDDWithProject.csproj", "{755650AF-A242-4DEA-A4BD-51EBD7EF0EF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDWithProject", "src\TDDWithProject\TDDWithProject.csproj", "{755650AF-A242-4DEA-A4BD-51EBD7EF0EF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDWithProject.Test", "TDDWithProject.Test\TDDWithProject.Test.csproj", "{F21F37EF-D960-4F26-8713-B295AB0B16A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDWithProject.Test", "test\TDDWithProject.Test\TDDWithProject.Test.csproj", "{F21F37EF-D960-4F26-8713-B295AB0B16A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{51FEF7FC-4FF0-4386-967E-D5F4E980ECBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3CC0B61D-A087-4CCF-A3BA-6CEE8B7F1E85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{F82DCC32-2C42-4D3C-B7DE-1FC7A71ACD7D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +36,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{755650AF-A242-4DEA-A4BD-51EBD7EF0EF0} = {51FEF7FC-4FF0-4386-967E-D5F4E980ECBA}
+		{F21F37EF-D960-4F26-8713-B295AB0B16A1} = {3CC0B61D-A087-4CCF-A3BA-6CEE8B7F1E85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {192729E6-9B72-4703-A2CA-0C19B012AB2B}
