@@ -36,4 +36,4 @@ Conhecimento necessário
 
 ## Fase 2 
 
-https://github.com/erlimar/pepino
+https://github.com/erlimar/kino
