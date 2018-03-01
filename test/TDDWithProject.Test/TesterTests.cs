@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.IO;
+using Xunit;
 
 namespace TDDWithProject.Test
 {
@@ -14,18 +15,21 @@ namespace TDDWithProject.Test
             Quando Aciono a funcionalidade Validar
             Entao O resultado exibido é FALSO ("O arquivo não existe")
         */
-        [Fact(DisplayName = "Arquivo inexistente é inválido")]
-        public void Arquivo_Inexistente_Eh_Invalido()
+        [Theory(DisplayName = "Arquivo inexistente é inválido")]
+        [InlineData("C:\\Arquivo\\invalido.dll")]
+        [InlineData(null)]
+        [InlineData("")]
+        [InlineData("./unix/system/invalido")]
+        public void Arquivo_Inexistente_Eh_Invalido(string path)
         {
             // Arrange
-            var path = "C:\\Arquivo\\invalido.dll";
             var sut = new Tester();
 
             // Act
-            bool resultado = sut.ValidarArquivo(path);
+            var expt = Assert.Throws<FileNotFoundException>(() => sut.ValidarArquivo(path));
 
             // Assert
-            Assert.False(resultado);
+            Assert.Equal($"O arquivo \"{path}\" não existe.", expt.Message);
         }
     }
 }
