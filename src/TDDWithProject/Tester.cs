@@ -7,7 +7,7 @@ namespace TDDWithProject
     {
         public bool ValidarArquivo(string path)
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
