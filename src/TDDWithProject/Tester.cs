@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace TDDWithProject
 {
@@ -7,7 +8,8 @@ namespace TDDWithProject
     {
         public bool ValidarArquivo(string path)
         {
-            return false;
-        }
+	        throw new FileNotFoundException($"O arquivo \"{path}\" não existe.");
+
+		}
     }
 }
